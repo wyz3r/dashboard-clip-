@@ -1,0 +1,93 @@
+.body-graph {
+  padding: 0 15px;
+  background: rgba(233, 232, 232, 0.933);
+  .general-info{
+    display: block;
+    // height: 100px;
+    background: #2E3033;
+    color: white;
+    border-radius: 5px;
+    padding: 35px 0;
+    margin-top: 20px;
+    .general-titulo{
+      font-family: 'Barlow', sans-serif;
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      display: block;
+      font-weight: bold;
+      margin: 0;
+    }
+    .graphs-content{
+      display: flex;
+      flex-flow: row wrap;
+      .decoration{
+        height: 70px;
+        width: 100%;
+        display: none;
+        // background-color: red;
+        background-image: url('https://s3.amazonaws.com/clipdashboard/Lineas.svg');
+        // background-size: cover;
+        background-repeat: repeat-x;
+
+      }
+      .payment-graph{
+        font-family: 'Barlow', sans-serif;
+        width: 50%;
+        text-align: center;
+        font-weight: 200;
+        .sub-titulo{
+          font-weight: 400;
+          font-size: 1.825rem;
+          text-transform: uppercase;
+        }
+        
+        .justify-graph-content{
+          margin: 0;
+          width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      
+    }
+  }
+  .content-graph-info {
+    display: block;
+    // height: 100px;
+    background: white;
+    color:rgb(252, 76, 2);;
+    border-radius: 5px;
+    padding: 35px 0;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .general-titulo{
+      font-family: 'Barlow', sans-serif;
+      width: 80%;
+      text-align: left;
+      font-size: 2.3rem;
+      display: block;
+      font-weight: bold;
+      margin: 0;
+      
+    }
+    .graphs-content {
+      display: flex;
+      // flex-flow: row wrap;
+      .decoration{
+        height: 50px;
+        width: 100%;
+        // background-color: red;
+        background-image: url('https://s3.amazonaws.com/clipdashboard/Lineas.svg');
+        background-size: cover;
+        background-repeat: repeat-x;
+        mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+
+      }
+    }
+  }
+}
+// .uno{display: none}

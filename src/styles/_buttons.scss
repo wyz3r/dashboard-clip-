@@ -1,0 +1,34 @@
+.material-button{
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  user-select: none;
+  color: #fff;
+  height: 37px;
+  width: 147px;
+  background: $primary;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  	&:hover {
+  		box-shadow: 0px 6px 8px -3px rgba(0,0,0,0.3);
+  		transform: translateY(-5px);
+  	}
+  	&:focus{
+  		background: rgb(15, 93, 228);
+  		outline: none;
+    }
+
+  &.edit {
+    background: #E86252;
+    color: $primary_degraded;
+  }
+  &.cancel {
+    background: rgb(236, 232, 11);
+    color: $color3;
+  }
+}

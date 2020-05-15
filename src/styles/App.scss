@@ -1,0 +1,53 @@
+$primary: #2A5EC9;
+$primary_degraded: #FFDBCF;
+$color2: #E4E8F3;
+$color3: #5188fb;
+$color4: #35CA98;
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,400,700');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.main-container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body{
+  background: rgba(233, 232, 232, 0.933);
+}
+@import 'buttons';
+@import 'SideBar';
+@import 'contentPreguntas';
+@import 'uploadFiles';
+@import 'login';
+@import 'dashboard';
+@import 'bodygraph';
+@import 'cardStyled';

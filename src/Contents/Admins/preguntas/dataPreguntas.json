@@ -1,0 +1,527 @@
+[
+  { 
+    "clave": "F4",
+    "titulo": "Género",
+    "tipo": "Unica",
+    "opciones": ["Hombre", "Mujer"],
+    "relevancia": "Filtro"
+  },
+  { 
+    "clave": "F5",
+    "titulo": "Edad",
+    "tipo": "Unica",
+    "opciones": ["18 a 25", "26 a 35", "36 a 45", "46 o más"],
+    "relevancia": "Filtro"
+  },
+  { 
+    "clave": "A1",
+    "titulo": "NSE",
+    "tipo": "Unica",
+    "opciones": ["ABC+", "C", "C-/D+"],
+    "relevancia": "Filtro"
+  },
+  { 
+    "clave": "F6",
+    "titulo": "Residencia",
+    "tipo": "Unica",
+    "opciones": ["Todas los estados de la república pero el levantamiento se llevará a cabo con las siguientes cuotas por cada ciudad", "Valle de México", "Guadalajara", "Monterrey", "Estado de México", "Quintana Roo", "Nacional (resto de las ciudades)"],
+    "relevancia": "Filtro"
+  },
+  { 
+    "clave": "P1",
+    "titulo": "Cuenta con negocio propio",
+    "tipo": "Unica",
+    "opciones": ["Sí", "No"],
+    "relevancia": "Filtro"
+  },
+  { 
+    "clave": "P2",
+    "titulo": "Giro del negocio",
+    "tipo": "Abierta",
+    "opciones": [],
+    "relevancia": "Filtro"
+  },
+  { 
+    "clave": "P3",
+    "titulo": "Personas que trabajan en su negocio",
+    "tipo": "Unica",
+    "opciones": ["Sólo yo", "Menos de 10 personas", "Entre 11 y 30 personas", "Entre 31 y 50 personas", "Entre 51 y 100 personas", "Más de 100 personas"],
+    "relevancia": "Filtro"
+  },
+  { 
+    "clave": "P4",
+    "titulo": "Ingreso mensual de su negocio",
+    "tipo": "Unica",
+    "opciones": ["Menos de $10,000 pesos mensuales", "Entre $10,000 y $50,000 pesos mensuales", "Entre $50,000 y $100,000 pesos mensuales", "Entre $100,000 y $150,000 pesos mensuales", "Entre $150,000 y $200,000 de pesos mensuales", "Más de $200,000 de pesos mensuales"],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "P4a",
+    "titulo": "Cuenta con servicio de internet",
+    "tipo": "Unica",
+    "opciones": ["Sí", "No"],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "P4b",
+    "titulo": "Cuenta con celular en su negocio",
+    "tipo": "Unica",
+    "opciones": ["Sí", "No"],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "P5",
+    "titulo": "Acepta pagos con tarjeta",
+    "tipo": "Unica",
+    "opciones": ["Sí", "No"],
+    "relevancia": "Filtro"
+  },
+  { 
+    "clave": "P5x",
+    "titulo": "Por qué no acepta pago con tarjeta",
+    "tipo": "Abierta",
+    "opciones": [],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "P5a",
+    "titulo": "Herramientas de cobro con tarjeta",
+    "tipo": "Unica",
+    "opciones": ["Terminal bancaria", "Lector de tarjeta bancaria", "Ambos"],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "P5b",
+    "titulo": "Duración de la bateria",
+    "tipo": "Unica",
+    "opciones": ["Muy mala", "Muy buena"],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "P5c",
+    "titulo": "Conectividad",
+    "tipo": "Unica",
+    "opciones": ["Muy mala", "Muy buena"],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "P101",
+    "titulo": "Cuenta con TDC o TDD",
+    "tipo": "Unica",
+    "opciones": ["Sí", "No"],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "P102",
+    "titulo": "Ha utilizado su TDC en los U15 días",
+    "tipo": "Unica",
+    "opciones": ["Sí", "No"],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "P103",
+    "titulo": "Tipo de negocio en los que utilizó la tarjeta",
+    "tipo": "Abierta",
+    "opciones": [],
+    "relevancia": "Filtro"
+  },
+  { 
+    "clave": "P104",
+    "titulo": "Seguridad de pago",
+    "tipo": "Unica",
+    "opciones": ["Me siento más seguro realizando mis pagos con dinero en efectivo", "Me da lo mismo realizar mis pagos en efectivo o con una tarjeta de crédito o débito", "Me siento más seguro realizando mis pagos con tarjeta de crédito o débito"],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "P105",
+    "titulo": "Del 100% cómo divide sus pagos ",
+    "tipo": "Unica",
+    "opciones": ["Efectivo", "Tarjeta de crédito", "Tarjeta de débito", "Cheque", "Transferencia electrónica", "Otro"],
+    "relevancia": "No filtro"
+  },
+  { 
+    "clave": "BH1",
+    "titulo": "Awareness espontáneo",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH2",
+    "titulo": "Recordación publicitaria espontáneo",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH3",
+    "titulo": "Awareness Ayudado",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH4",
+    "titulo": "Familiaridad",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH4a",
+    "titulo": "Número de terminales que tiene en su negocio",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH4b",
+    "titulo": "Marca de las terminales de su negocio",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH4c",
+    "titulo": "Lugar de compra de LTB",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH5",
+    "titulo": "U3M",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH6",
+    "titulo": "Satisfacción",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH6a",
+    "titulo": "Satisfacción T3B",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH6b",
+    "titulo": "Satisfacción B3B",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH6c",
+    "titulo": "Satisfacción Middle boxes",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH6.1",
+    "titulo": "Qué tiene un LTB vs terminal bancaria",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH6d",
+    "titulo": "Último mes",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH7",
+    "titulo": "Preferencia",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH8",
+    "titulo": "Consideración",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH8.1",
+    "titulo": "Consideración - Comerciantes No usuarios",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH8a",
+    "titulo": "Razones de consideración de compra",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH8b",
+    "titulo": "Opción de MSI",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH9",
+    "titulo": "Promoción de MSI activa",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH9a",
+    "titulo": "Beneficios al ofrecer MSI",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH9b",
+    "titulo": "Razones por las que no ofrece MSI",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "BH12",
+    "titulo": "Touchpoints de LTB primera vez",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "RP1",
+    "titulo": "Rec. Publicitaria espontáneo",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "RP2",
+    "titulo": "Qué recuerda de la publicidad",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "RP3",
+    "titulo": "Medios de recordación",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "RP4",
+    "titulo": "Atributos de marcas",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EV1",
+    "titulo": "Recordación publiciataria Clip",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EV2",
+    "titulo": "Medios de recordación publicitaria de Clip",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "DG1",
+    "titulo": "Redes sociales U15días",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "DG2",
+    "titulo": "Expuestos / No expuestos",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "DG3",
+    "titulo": "Atribución de marca",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "DG4",
+    "titulo": "Desempeño del material",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "DG5",
+    "titulo": "Mensaje espontáneo",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "DG6",
+    "titulo": "Atributos",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM0",
+    "titulo": "Recordación publicitaria del estímulo",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM1",
+    "titulo": "Medios de recordación",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM1a",
+    "titulo": "Persuasión a seguir usando Clip",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM1b",
+    "titulo": "Persuasión a adquirir Clip",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM1c",
+    "titulo": "Persuasión a preferir pagar con Clip",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM2",
+    "titulo": "Razones de persuasión",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM4",
+    "titulo": "Novedad",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM5",
+    "titulo": "Agrado",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM6",
+    "titulo": "Atracción",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM7",
+    "titulo": "Fit con la marca",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM8",
+    "titulo": "Relevancia",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM8a",
+    "titulo": "Credibilidad",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM8b",
+    "titulo": "Identificación",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM8c",
+    "titulo": "Claridad",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM9",
+    "titulo": "Disgustos",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM10",
+    "titulo": "Gustos",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "EM18",
+    "titulo": "KCP",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "RP1",
+    "titulo": "Recordación de promociones",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "RP2",
+    "titulo": "Medios de recordación ",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  },
+  { 
+    "clave": "RP3",
+    "titulo": "Qué recuerda de la promoción",
+    "tipo": "",
+    "opciones": [],
+    "relevancia": ""
+  }
+]

@@ -1,0 +1,347 @@
+.dashboard-main{
+  width: 100%;
+  height: 100vh;
+  background: #F2F2F2;
+ 
+  .dashboard-header {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    // background: red;
+    background-image: linear-gradient(to right, #FC4C02 , #FC4C02, #F1C42C);
+    .right{
+      width: 50%;
+      display: flex;
+      align-self: flex-end;
+      justify-content: center;
+      .logo{
+        width: 320px;
+        height: 300px;
+        // position: absolute;
+        right: 65px;
+        bottom: 0;
+        z-index: 10;   
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('https://s3.amazonaws.com/clipdashboard/Logo_clip.png');
+      }
+    }
+    .left{
+      width: 50%;
+      .header-title {
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 3.5rem;
+        margin-left: 35px;
+        margin-top: 200px;
+        font-weight: 400;
+      }
+    }
+  }
+  .menu-container {
+    // opacity: 1;
+    width: 100%;
+    display: flex;
+    // position: fixed;
+    z-index: 11;
+    // position: relative;
+    &.mystyle {
+      position: fixed;
+      top:0;
+    }
+    flex-direction: column;
+    .arrow {
+      height: 32px;
+      width: 131px;
+      margin-left: auto;
+      position: relative;
+      margin-right: auto;
+      background-image: url('https://s3.amazonaws.com/clipdashboard/Pestana.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      // box-shadow: 3px 8px rgba(136, 136, 136, 0.5);
+      
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    
+    .form-container{
+      color: #F2F2F2;
+      background: #2a2c31;
+
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      height: 10px;
+      transition: all 0.2s;
+      flex-wrap: wrap;
+      // box-shadow: 3px 10px rgba(136, 136, 136, 0.5);
+      &.activeMenu{
+        height: 375px;
+        @media (orientation: portrait) {
+          height: 625px;
+        }
+
+      }
+      .first-section {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: flex-start;
+        padding-left: 25px;
+        .select-content{
+          display: flex;
+          flex-direction: column;
+          // padding: 25px;
+          margin-bottom: 15px;
+          padding-top: 5px;
+          label {
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+          }
+          // select {
+          //   height: 20px;
+          //   width: 250px;
+          //   font-size: 15px;
+          //   border: 1px black solid;
+          // }
+          .caja {
+            // margin: 20px auto 40px auto;	
+            border: 1px solid #d9d9d9;
+            height:20px;
+            overflow: hidden;
+            width: 260px;
+            position:relative;
+            background: #F2F2F2;
+            border-radius: 5px;
+         }
+         select {
+            background: transparent;
+            border: none;
+            font-size: 14px;
+            height: 20px;
+            width: 300px;
+         }
+         select:focus{ outline: none;}
+         
+         .caja::after{
+           content:"\025be";
+           display: table-cell;
+           padding-top: 2px;
+           text-align:center;
+           width:30px;
+           height:30px;
+           background-color: #afaeae;
+           color: black;
+           position: absolute;
+           top: 0;
+           right: 0px;	
+           pointer-events: none;
+         }
+          
+        }
+        .filter-box {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          label{
+            // margin: 10px;
+            // margin-left: 0;
+            // margin-right: 0;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            
+          }
+          .box-radio-button{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            .radio-button{
+              // width: 55px;
+              text-align: center;
+              padding: 5px;
+              border: 1px solid white;
+              border-radius: 5px;
+              margin-left: 10px;
+              margin-right: 10px;
+              &.active{
+                background: white;
+                color: #FC4C02;
+              }
+            }
+            .short {
+              width: 55px;
+            }
+            .large {
+              width: 84px;
+            }
+            .radio-button:hover{
+              cursor: pointer;
+            }
+            .radio-button:first-child{
+              margin-left: 0px
+            }
+            .active {
+              color: #FC4C02;
+              background: #F2F2F2;
+            }
+          }
+        }
+      }
+      .second-section {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: flex-start;
+        padding-left: 25px;
+        @media (orientation: portrait) {
+          align-items: center;
+        }
+        
+      }
+      .third-section {
+        flex-grow: 1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      // custom filter box for 2da and 3thr section 
+      .filter-box {
+        &.hidden{
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        label {
+          font-family: 'Barlow', sans-serif;
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+        .box-tree-button{
+          display: flex;
+         .button{
+           width: 100px;
+           text-align: center;
+           border: 1px solid white;
+           font-family: 'Barlow', sans-serif;
+           padding: 5px;
+           &.active{
+             background: white;
+             color: #FC4C02;
+           }
+         }
+         .button:hover{
+          cursor: pointer;
+          }
+         .button:nth-child(1){
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+          .button:nth-child(3){
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+        .box-two-button{
+          display: flex;
+         .button{
+           width: 155px;
+           text-align: center;
+           border: 1px solid white;
+           font-family: 'Barlow', sans-serif;
+           padding: 5px;
+           &.active{
+            background: white;
+            color: #FC4C02;
+           }
+         }
+         .button:hover{
+          cursor: pointer;
+        }
+         .button:nth-child(1){
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        .button:nth-child(2){
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        }
+        .box-radio-button{
+          display: flex;
+          .radio-button{
+            // width: 55px;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin-left: 5px;
+            margin-right: 10px;
+            &.active{
+              background: white;
+              color: #FC4C02;
+            }
+          }
+          .short {
+            width: 55px;
+          }
+          .large {
+            width: 84px;
+          }
+          .radio-button:hover{
+            cursor: pointer;
+          }
+          .radio-button:first-child{
+            margin-left: 0px
+          }
+          .active {
+            color: #FC4C02;
+            background: #F2F2F2;
+          }
+        }
+      }
+    }
+    
+
+
+  }
+}
+
+@media (orientation: portrait) {
+  .dashboard-main{
+    .dashboard-header {
+      flex-direction: column;
+      .right{
+        width: 100%;
+        display: flex;
+        align-self: flex-end;
+        justify-content: flex-end;
+        
+        .logo{
+          width: 150px;
+          height: 155px;
+          margin-right: 25px;
+          bottom: none;
+        }
+      }
+      .left{
+        width: 100%;
+        .header-title {
+          color: white;
+          font-family: 'Barlow', sans-serif;
+          font-size: 2.5rem;
+          margin-left: 15px;
+          margin-top: 50px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

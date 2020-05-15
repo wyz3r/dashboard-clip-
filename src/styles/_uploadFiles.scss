@@ -1,0 +1,203 @@
+
+.content-upload {
+  // width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  img {
+    width: 100px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content-uploadFile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .interaction-container {
+      display: flex;
+      justify-content: center;
+      #upload-file {
+        /* border: 5px solid blue;
+        width: 100%;
+        height: 100px; */
+        border: 2px dashed #39D2B4;
+        margin-top: 15px;
+         
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        padding: 25px;
+        text-align: center;
+        width: 128px;
+        font: 20pt bold,"Vollkorn";
+        color: #bbb;
+      }
+      .input-file-container {
+        position: relative;
+        margin-left: 10px;
+        .files-container{
+          display: flex;
+          flex-direction: column;
+          // justify-content: center;
+          
+        }
+      }
+      .input-file-trigger {
+        display: block;
+        padding: 14px 45px;
+        background: #448AFF;
+        color: #fff;
+        width: 100px;
+        font-size: 1em;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+      .input-file-trigger-cancel{
+        display: block;
+        padding: 14px 45px;
+        background: #9D9D9D;
+        color: #fff;
+        width: 100px;
+        font-size: 1em;
+        margin-right: 10px;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+        transition: all 200ms ease-in-out;
+        margin-top: 15px;
+        &.active {
+          background: orange;
+          cursor: pointer;
+        }
+      }
+      .input-file-trigger-save{
+        display: block;
+        padding: 14px 45px;
+        background: #9D9D9D;
+        color: #fff;
+        width: 100px;
+        font-size: 1em;
+        margin-right: 10px;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+        transition: all 200ms ease-in-out;
+        margin-top: 15px;
+        &.active {
+          background: #2266e6;
+          cursor: pointer;
+        }
+      }
+      .input-file {
+        position: absolute;
+        top: 0; left: 0;
+        width: 225px;
+        opacity: 0;
+        padding: 14px 0;
+       
+        cursor: pointer;
+        &:hover {
+          box-shadow: 0px 6px 8px -3px rgba(0,0,0,0.3);
+          transform: translateY(-5px);
+        }
+        &:focus{
+          background: rgb(15, 93, 228);
+          outline: none;
+        }
+      }
+    }
+    .dates-containners{
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+      .select-content{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        label {
+          font-family: 'Barlow', sans-serif;
+          font-size: 1rem;
+          margin-bottom: 10px;
+        }
+        .caja {
+          // margin: 20px auto 40px auto;	
+          border: 1px solid #d9d9d9;
+          height: 20px;
+          overflow: hidden;
+          width: 260px;
+          position:relative;
+          background: #F2F2F2;
+          border-radius: 5px;
+       }
+       select {
+          background: transparent;
+          border: none;
+          font-size: 14px;
+          height: 20px;
+          padding: 5px;
+          width: 300px;
+       }
+       select:focus{ outline: none;}
+       
+       .caja::after{
+         content:"\025be";
+         display: table-cell;
+         padding-top: 2px;
+         text-align:center;
+         width:30px;
+         height:30px;
+         background-color: #afaeae;
+         color: black;
+         position: absolute;
+         top: 0;
+         right: 0px;	
+         pointer-events: none;
+       }
+        
+      }
+    }
+    
+  }
+  .content-uploads {
+    margin: 35px auto;
+    margin-top: 15px;
+    height: 550px;
+    overflow-x:scroll;
+    width: 80%;
+    background: white;
+    table {
+      border: none;
+      border-collapse: collapse;
+      border: 2px solid $color2;
+      margin: 0 auto;
+      overflow: hidden;
+      table-layout: fixed;
+      width: 100%;
+      thead {
+        background: #F5F5F5;
+        tr {
+          border-bottom: 2px solid $color2;
+          color: #9D9D9D;
+          height: 3rem;
+          th {
+            font-size: 1rem;
+            font-weight: lighter;
+            width: 220px;
+          }
+        }
+      }
+      tbody {
+        overflow-y: scroll;
+        tr {
+          border-bottom: 2px solid $color2;
+          height: 4rem;
+          td {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

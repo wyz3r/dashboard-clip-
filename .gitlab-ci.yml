@@ -1,0 +1,53 @@
+image: docker:latest
+variables:
+  DOCKER_DRIVER: overlay
+  FRONT_WEB: git.socialdecode.com:4567/delariva/dashboard-clip:latest
+
+buildweb:
+  stage: build
+  image: node:10.15.0
+  tags:
+    - internal
+  script:
+  - node -v
+  - npm install
+  - npm run build
+  - cp Dockerfile ./build
+  only:
+    - master
+  artifacts:
+    expire_in: 5 min
+    paths:
+      - build/
+
+publish:
+  only:
+    - master
+  stage: publish
+  dependencies:
+  - buildweb
+  tags:
+    - internal
+  script:
+    - cat ./Dockerfile
+    - docker build -t $FRONT_WEB ./build
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN git.socialdecode.com:4567
+    - docker push $FRONT_WEB
+
+release:
+  only:
+    - master
+  stage: deploy
+  before_script:
+    - echo "releasing $FRONT_WEB..."
+  stage: deploy
+  image: cdrx/rancher-gitlab-deploy
+  tags:
+    - internal
+  script:
+    - upgrade --stack clipboard --service clipfront
+
+stages:
+  - build
+  - publish
+  - deploy
